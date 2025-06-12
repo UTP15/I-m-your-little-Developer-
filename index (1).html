@@ -1,0 +1,148 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Handwritten Note with Logos, Animation, and Background</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+   body {
+     font-family: 'Indie Flower', cursive;
+     font-size: 1.25rem;
+     line-height: 1.5;
+     background-color: #fff8dc; /* light warm cream background */
+     color: #000;
+     min-height: 100vh;
+     margin: 0;
+     padding: 0;
+   }
+   .circle {
+     width: 3rem;
+     height: 3rem;
+     border-radius: 9999px;
+     border: 2px solid black;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: transform 0.3s ease;
+     background-color: #fff;
+   }
+   .circle:hover {
+     transform: scale(1.2) rotate(10deg);
+     border-color: #2563eb; /* Tailwind blue-600 */
+     box-shadow: 0 0 8px rgba(37, 99, 235, 0.6);
+   }
+   .icon {
+     width: 1.75rem;
+     height: 1.75rem;
+     transition: filter 0.3s ease;
+   }
+   .circle:hover .icon {
+     filter: drop-shadow(0 0 2px #2563eb);
+   }
+   /* Animate stars with a gentle pulse */
+   @keyframes pulseStar {
+     0%, 100% {
+       transform: scale(1);
+       color: #000;
+     }
+     50% {
+       transform: scale(1.3);
+       color: #fbbf24; /* Tailwind yellow-400 */
+     }
+   }
+   .star-animate {
+     animation: pulseStar 2s infinite;
+     cursor: pointer;
+   }
+  </style>
+ </head>
+ <body>
+  <main class="max-w-3xl mx-auto p-6">
+   <section class="mb-6">
+    <p class="text-center text-lg font-normal mb-4">I'm your little Developer</p>
+    <p><span class="underline">Name:</span> John Mark B Serdeña</p>
+    <p><span class="underline">Age:</span> 16</p>
+    <p><span class="underline">Hobies:</span> Chess, reading, coding, learning a lot</p>
+    <p><span class="underline">My birthday:</span> Oct 12, 2008</p>
+    <p class="pl-8">My Moto in life</p>
+    <p class="pl-8">Make a money bitch</p>
+   </section>
+   <section class="mb-6">
+    <p>The programing language i whant to learn</p>
+    <div class="flex justify-between max-w-xl mt-2 mb-4">
+     <div class="flex flex-col items-center space-y-1">
+      <div class="circle" title="HTML">
+       <img alt="HTML logo placeholder" class="icon" height="28" src="https://storage.googleapis.com/a1aa/image/f52cd888-95bf-4e96-19f7-fe9d8d11c1cd.jpg" width="28"/>
+      </div>
+      <span>HTML</span>
+     </div>
+     <div class="flex flex-col items-center space-y-1">
+      <div class="circle" title="CSS">
+       <img alt="CSS logo placeholder" class="icon" height="28" src="https://storage.googleapis.com/a1aa/image/616bf424-5c77-4c38-9d53-e661ce1bc2e4.jpg" width="28"/>
+      </div>
+      <span>CSS</span>
+     </div>
+     <div class="flex flex-col items-center space-y-1">
+      <div class="circle" title="Python">
+       <img alt="Python logo placeholder" class="icon" height="28" src="https://storage.googleapis.com/a1aa/image/fff34346-6c12-4c18-cad0-18c3cbdb34d0.jpg" width="28"/>
+      </div>
+      <span>Python</span>
+     </div>
+     <div class="flex flex-col items-center space-y-1">
+      <div class="circle" title="JavaScript">
+       <img alt="JavaScript logo placeholder" class="icon" height="28" src="https://storage.googleapis.com/a1aa/image/aa2cfc50-bf9a-4051-d9f1-4838ad460db7.jpg" width="28"/>
+      </div>
+      <span>Javascript</span>
+     </div>
+    </div>
+   </section>
+   <section class="mb-6">
+    <p>My simple message to you read plss</p>
+    <p class="tracking-widest font-mono text-sm leading-5">
+     JVQWWZJAPEXXK4RAMRZ8KYLNOMQGC<br />
+     3DJQZSSA2LOEB4W6SLSEBUGKYL SOQQGO<br />
+     33FEBUXGIDBNR3WC6LTEBXWUIDZ<br />
+     NS2XEIDTNFSGK===
+    </p>
+   </section>
+   <section class="mb-6">
+    <div class="flex justify-between max-w-xl mt-2 mb-4">
+     <div class="flex flex-col items-center space-y-1">
+      <div class="circle" title="Facebook">
+       <img alt="Facebook logo placeholder" class="icon" height="28" src="https://storage.googleapis.com/a1aa/image/9bbcf133-29d2-4820-b597-0e094aa8738c.jpg" width="28"/>
+      </div>
+      <span>Facebook</span>
+      <span class="text-center">John Mark B.</span>
+      <span class="text-center">Serdeña</span>
+     </div>
+     <div class="flex flex-col items-center space-y-1">
+      <div class="circle" title="GitHub">
+       <img alt="GitHub logo placeholder" class="icon" height="28" src="https://storage.googleapis.com/a1aa/image/0fa54aad-40e7-4103-a42b-71c00029533a.jpg" width="28"/>
+      </div>
+      <span>Github</span>
+      <span>UTP IS</span>
+     </div>
+     <div class="flex flex-col items-center space-y-1">
+      <div class="circle" title="TikTok">
+       <img alt="TikTok logo placeholder" class="icon" height="28" src="https://storage.googleapis.com/a1aa/image/45673484-5237-4d69-9eb2-1bf4f4e650c9.jpg" width="28"/>
+      </div>
+      <span>Tiktok</span>
+      <span>Hi</span>
+     </div>
+    </div>
+   </section>
+   <section class="text-center">
+    <p class="mb-2">PLSS RATE MY WORK</p>
+    <div class="flex justify-center space-x-1 text-2xl">
+     <i class="far fa-star star-animate" title="Star 1"></i>
+     <i class="far fa-star star-animate" style="animation-delay: 0.4s" title="Star 2"></i>
+     <i class="far fa-star star-animate" style="animation-delay: 0.8s" title="Star 3"></i>
+     <i class="far fa-star star-animate" style="animation-delay: 1.2s" title="Star 4"></i>
+     <i class="far fa-star star-animate" style="animation-delay: 1.6s" title="Star 5"></i>
+    </div>
+   </section>
+  </main>
+ </body>
+</html>
